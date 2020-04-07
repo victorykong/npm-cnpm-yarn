@@ -9,6 +9,12 @@
 * npm 在以上 cnpm 的两种情况中，不需要加参数即可对 package.json 中对应的依赖包进行更新并记录。
 
 
+### yarn
+* npm install -g yarn
+* yarn --version
+* https://www.jianshu.com/p/b306a19a64ee
+
+
 ### 建议
 * 不建议直接使用 cnpm 问题太多...
 * 推荐是将使用 npm 但是将镜像源切换至 cnpm 的地址，依旧使用 npm 下包
@@ -25,4 +31,16 @@ npm config get registry
 npm config set registry https://registry.npm.taobao.org
 npm config get registry 
 - https://registry.npm.taobao.org/
+```
+
+* yarn 改变源地址
+
+```
+// 官方地址
+yarn config get registry
+-- https://registry.yarnpkg.com
+
+
+// 修改
+yarn config set registry https://registry.npm.taobao.org/
 ```
